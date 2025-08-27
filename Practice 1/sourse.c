@@ -135,35 +135,140 @@ int main()
 
 #pragma region 연습 1
 
-int x1 = 25;
-int x2 = 5;
+// int x1 = 25;
+// int x2 = 5;
+// 
+// int status = x1 + x2;
+// 
+// status = x1 * x2 *(x1 + x2);
+// 
+// int status2 = x1 * x2 * (x1 + x2) * (x1 - x2);
+// 
+// int star1 = 30;
+// int star2 = 70;
+// int star3 = 100;
+// int star4 = 200;
+// 
+// int stars = star1 / star2;
+// 
+// stars = star2 / star1 * star4 / star3;
+// 
+// int stars2 = star1 * star2 * star3 * star4;
+// 
+// printf("status : %d\n", status);
+// printf("status & status2 : %d\n", status& status2);
+// printf("stars : %d\n", stars);
+// printf("stars | stars2 : %d\n", stars | stars2);
+// printf("status & stars, status2 | stars2, status ^ stars2, status2 & stars, ~status, ~status2, ~stars, ~stars2 : %d\n", status& stars, status2 | stars2, status^ stars2, status2& stars, ~status, ~status2, ~stars, ~stars2);
+// 
+// int st1 = 10;
+// int shift = st1 << 4;
+// 
+// printf("st1 변수의 값 : %d\n", shift);
+// 
+// shift = st1 >> 2;
+// 
+// printf("st1 변수의 값 : %d\n", shift);
+// 
+// int st2 = 5;
+// int shift = st2 << 2;
+// 
+// printf("st2 변수의 값 : %d\n", shift);
+// 
+// shift = st2 >> 10;
+// 
+// printf("st2 변수의 값 : %d\n", shift);
+#pragma endregion
 
-int status = x1 + x2;
+#pragma region 오버플로우 & 언더플로우
 
-status = x1 * x2 *(x1 + x2);
+// char s = 127 + 1;
+// printf("s의 값 : %d\n", s);
+// 
+// char i = -128 - 1;
+// printf("i의 값 : %d\n", i);
+#pragma endregion
 
-int status2 = x1 * x2 * (x1 + x2) * (x1 - x2);
+#pragma region 부호 없는 자료형 & 실수를 표현하는 방법
 
-int star1 = 30;
-int star2 = 70;
-int star3 = 100;
-int star4 = 200;
-
-int stars = star1 / star2;
-
-stars = star2 / star1 * star4 / star3;
-
-int stars2 = star1 * star2 * star3 * star4;
-
-printf("status : %d\n", status);
-printf("status & status2 : %d\n", status& status2);
-printf("stars : %d\n", stars);
-printf("stars | stars2 : %d\n", stars | stars2);
-printf("status & stars, status2 | stars2, status ^ stars2, status2 & stars, ~status, ~status2, ~stars, ~stars2 : %d\n", status& stars, status2 | stars2, status^ stars2, status2& stars, ~status, ~status2, ~stars, ~stars2);
-
- 
+// unsigned int count = 237429334;
+// 
+// printf("signed out 변수의 값 : %d\n", count);
+// printf("unsigned out 변수의 값 : %u\n", count);
+// 
+// float epd = 8.15f;
+// double e = 8.5;
+// 
+// printf("epd 변수의 값 : %.7f\n", epd);
+// printf("e 변수의 값 : %f\n", e);
 
 #pragma endregion
+
+#pragma region if문, else if 문, else 문, swich문
+
+int health = 0;
+
+if (health <= 0)
+{
+    printf("Destroy\n");
+}
+
+int ammo = 30;
+
+if (ammo >= 30)
+{
+    printf("재장전 완료!\n");
+}
+else if (ammo <= 0)
+{
+    printf("재장전하세요!\n");
+}
+else
+{
+    printf("교전을 계속하세요!\n");
+}
+
+int fuel = 100;
+
+if (fuel <= 0)
+{
+    printf("주유하세요!");
+}
+else if (fuel >= 100)
+{
+    printf("주유 완료! 주행하세요!\n");
+}
+else
+{
+    printf("계속 주행하세요\n");
+}
+
+char grade = 'A';
+
+switch (grade)
+{
+case 'A': printf("90점 ~ 100점입니다.\n");
+    break;
+case 'B': printf("80점 ~ 89점입니다.\n");
+    break;
+case 'C': printf("70점 ~ 79점입니다.\n");
+    break;
+case 'D': printf("60점 ~ 69점입니다.\n");
+    break;
+case 'E': printf("50점 ~ 59점입니다.\n");
+    break;
+case 'F': printf("50점 이하입니다.\n");
+    break;
+default: printf("Exception\n");
+    break;
+}
+
+
+
+#pragma endregion
+
+
+
 
 
 
