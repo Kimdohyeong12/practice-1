@@ -206,66 +206,190 @@ int main()
 
 #pragma region if문, else if 문, else 문, swich문
 
-int health = 0;
+// int health = 0;
+// 
+// if (health <= 0)
+// {
+//     printf("Destroy\n");
+// }
+// 
+// int ammo = 30;
+// 
+// if (ammo >= 30)
+// {
+//     printf("재장전 완료!\n");
+// }
+// else if (ammo <= 0)
+// {
+//     printf("재장전하세요!\n");
+// }
+// else
+// {
+//     printf("교전을 계속하세요!\n");
+// }
+// 
+// int fuel = 100;
+// 
+// if (fuel <= 0)
+// {
+//     printf("주유하세요!");
+// }
+// else if (fuel >= 100)
+// {
+//     printf("주유 완료! 주행하세요!\n");
+// }
+// else
+// {
+//     printf("계속 주행하세요\n");
+// }
+// 
+// char grade = 'A';
+// 
+// switch (grade)
+// {
+// case 'A': printf("90점 ~ 100점입니다.\n");
+//     break;
+// case 'B': printf("80점 ~ 89점입니다.\n");
+//     break;
+// case 'C': printf("70점 ~ 79점입니다.\n");
+//     break;
+// case 'D': printf("60점 ~ 69점입니다.\n");
+//     break;
+// case 'E': printf("50점 ~ 59점입니다.\n");
+//     break;
+// case 'F': printf("50점 이하입니다.\n");
+//     break;
+// default: printf("Exception\n");
+//     break;
+// }
 
-if (health <= 0)
-{
-    printf("Destroy\n");
-}
+#pragma endregion
 
-int ammo = 30;
+#pragma region 사분면
 
-if (ammo >= 30)
-{
-    printf("재장전 완료!\n");
-}
-else if (ammo <= 0)
-{
-    printf("재장전하세요!\n");
-}
-else
-{
-    printf("교전을 계속하세요!\n");
-}
+// int x = 0;
+// int y = 0;
+// 
+//  if (x > 0 && y > 0)
+//  {
+//      printf("제 1 사분면\n");
+//  }
+// else if (x < 1 && y > 0)
+// {
+//     printf("제 2 사분면\n");
+// }
+// else if (x < 1 && y < 0)
+// {
+//     printf("제 3 사분면\n");
+// }
+// else if (x > 0 && y < 1)
+// {
+//     printf("제 4 사분면\n");
+// }
+// else if (x != 0 && y == 0)
+// {
+//     printf("x 절편\n");
+// }
+// else if (x == 0 && y != 0)
+// {
+//     printf("y 절편");
+// }
+// else
+// {
+//     printf("원점\n");
+// }
+#pragma endregion
 
-int fuel = 100;
+#pragma region 증감 연산자
 
-if (fuel <= 0)
-{
-    printf("주유하세요!");
-}
-else if (fuel >= 100)
-{
-    printf("주유 완료! 주행하세요!\n");
-}
-else
-{
-    printf("계속 주행하세요\n");
-}
+// int ko1 = 0;
+// int ko2 = 0;
+// 
+// ko1 = ++ko2;
+// 
+// printf("ko2 변수를 전위 증가하는 값 : %d\n", ko2);
+// printf("ko1 변수의 값 : %d\n", ko1);
+// 
+// ko1 = --ko2;
+// 
+// printf("ko2 변수를 전위 감소하는 값 : %d\n", ko2);
+// printf("ko1 변수의 값 : %d\n", ko1);
+// 
+// int ko3 = 0;
+// int ko4 = 0;
+// 
+// ko3 = ko4++;
+// 
+// printf("ko4 변수를 후위 증가시키는 값 : %d\n", ko4);
+// printf("ko3 변수의 값 : %d\n", ko3);
+// 
+// ko3 = ko4--;
+// 
+// printf("ko4 변수를 후위 감소시키는 값 :%d\n", ko4);
+// printf("ko3 변수의 값 : %d\n", ko3);
 
-char grade = 'A';
+#pragma endregion
 
-switch (grade)
-{
-case 'A': printf("90점 ~ 100점입니다.\n");
-    break;
-case 'B': printf("80점 ~ 89점입니다.\n");
-    break;
-case 'C': printf("70점 ~ 79점입니다.\n");
-    break;
-case 'D': printf("60점 ~ 69점입니다.\n");
-    break;
-case 'E': printf("50점 ~ 59점입니다.\n");
-    break;
-case 'F': printf("50점 이하입니다.\n");
-    break;
-default: printf("Exception\n");
-    break;
-}
+#pragma region for 문, while 문, do - while 문, continue 문, 중첩 반복문
+
+// for (int i = 5; i < 10; i++)
+// {
+//     printf("update\n");
+// }
+// 
+// int count = 5;
+// 
+// while (count > 0)
+// {
+//     printf("count : %d\n", count);
+// 
+//     count--;
+// }
+// 
+// int life = 0;
+// 
+// do
+// {
+//     printf("You Alive\n");
+// } 
+// while (life > 0);
+// 
+// for (int i = 1; i <= 10; i++)
+// {
+//     if (i % 3 == 0)
+//     {
+//         continue;
+//     }
+// 
+//     printf("%d", i);
+// }
+// 
+// for (int i = 0; i < 3; i++)
+// {
+//     printf("out...\n");
+// 
+//     for (int j = 0; j < 3; j++)
+//     {
+//         printf("in...\n");
+//     }
+// }
+
+#pragma endregion
+
+#pragma region 연습 2
+
+int sp1 = 0;
+int sp2 = 0;
 
 
 
 #pragma endregion
+
+
+
+
+
+
 
 
 
