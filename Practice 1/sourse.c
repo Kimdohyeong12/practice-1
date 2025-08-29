@@ -378,10 +378,96 @@ int main()
 
 #pragma region 연습 2
 
-int sp1 = 0;
-int sp2 = 0;
+int HG = 0;
+int AR = 0;
 
+if (HG <= 0)
+{
+    printf("HG : Reload ammo\n");
+}
+else if (HG >= 15)
+{
+    printf("HG : Full ammo\n");
+}
+else
+{
+    printf("HG : Continue Engage\n");
+}
 
+if (AR <= 0)
+{
+    printf("AR : Reload ammo\n");
+}
+else if (AR >= 30)
+{
+    printf("AR : Full ammo\n");
+}
+else
+{
+    printf("AR : Continue Engage\n");
+}
+
+char rank = 'A';
+
+switch (rank)
+{
+case 'A': printf("90 ~ 100\n");
+    break;
+case 'B': printf("80 ~ 89\n");
+    break;
+case 'C': printf("70 ~ 79\n");
+    break;
+case 'D': printf("60 ~ 69\n");
+    break;
+case 'E': printf("50 ~ 59\n");
+    break;
+case 'F': printf("50 under\n");
+    break;
+default: printf("Exception\n");
+    break;
+}
+
+for (int i = 5; i < 10; i++)
+{
+    printf("Go!\n");
+}
+
+int count = 10;
+
+while (count > 0)
+{
+    printf("count : %d\n", count);
+
+    count--;
+}
+
+int ammo = 0;
+
+do
+{
+    printf("Reload Ammo\n");
+} 
+while (ammo > 0);
+
+for (int i = 1; i <= 10; i++)
+{
+    if (i % 5 == 0)
+    {
+        continue;
+    }
+
+    printf("%d", i);
+}
+
+for (int i = 0; i < 10; i++)
+{
+    printf("Go!\n");
+
+    for (int j = 0; j < 10; j++)
+    {
+        printf("stop!\n");
+    }
+}
 
 #pragma endregion
 
