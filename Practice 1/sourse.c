@@ -1,4 +1,7 @@
 ﻿#include <stdio.h>
+#include "utility.h"
+
+#define SIZE 770
 
 int main()
 {
@@ -378,98 +381,169 @@ int main()
 
 #pragma region 연습 2
 
-int HG = 0;
-int AR = 0;
+// int HG = 0;
+// int AR = 0;
+// 
+// if (HG <= 0)
+// {
+//     printf("HG : Reload ammo\n");
+// }
+// else if (HG >= 15)
+// {
+//     printf("HG : Full ammo\n");
+// }
+// else
+// {
+//     printf("HG : Continue Engage\n");
+// }
+// 
+// if (AR <= 0)
+// {
+//     printf("AR : Reload ammo\n");
+// }
+// else if (AR >= 30)
+// {
+//     printf("AR : Full ammo\n");
+// }
+// else
+// {
+//     printf("AR : Continue Engage\n");
+// }
+// 
+// char rank = 'A';
+// 
+// switch (rank)
+// {
+// case 'A': printf("90 ~ 100\n");
+//     break;
+// case 'B': printf("80 ~ 89\n");
+//     break;
+// case 'C': printf("70 ~ 79\n");
+//     break;
+// case 'D': printf("60 ~ 69\n");
+//     break;
+// case 'E': printf("50 ~ 59\n");
+//     break;
+// case 'F': printf("50 under\n");
+//     break;
+// default: printf("Exception\n");
+//     break;
+// }
+// 
+// for (int i = 5; i < 10; i++)
+// {
+//     printf("Go!\n");
+// }
+// 
+// int count = 10;
+// 
+// while (count > 0)
+// {
+//     printf("count : %d\n", count);
+// 
+//     count--;
+// }
+// 
+// int ammo = 0;
+// 
+// do
+// {
+//     printf("Reload Ammo\n");
+// } 
+// while (ammo > 0);
+// 
+// for (int i = 1; i <= 10; i++)
+// {
+//     if (i % 5 == 0)
+//     {
+//         continue;
+//     }
+// 
+//     printf("%d", i);
+// }
+// 
+// for (int i = 0; i < 10; i++)
+// {
+//     printf("Go!\n");
+// 
+//     for (int j = 0; j < 10; j++)
+//     {
+//         printf("stop!\n");
+//     }
+// }
+ 
+#pragma endregion
 
-if (HG <= 0)
-{
-    printf("HG : Reload ammo\n");
-}
-else if (HG >= 15)
-{
-    printf("HG : Full ammo\n");
-}
-else
-{
-    printf("HG : Continue Engage\n");
-}
+#pragma region 암묵적 형 변환
 
-if (AR <= 0)
-{
-    printf("AR : Reload ammo\n");
-}
-else if (AR >= 30)
-{
-    printf("AR : Full ammo\n");
-}
-else
-{
-    printf("AR : Continue Engage\n");
-}
-
-char rank = 'A';
-
-switch (rank)
-{
-case 'A': printf("90 ~ 100\n");
-    break;
-case 'B': printf("80 ~ 89\n");
-    break;
-case 'C': printf("70 ~ 79\n");
-    break;
-case 'D': printf("60 ~ 69\n");
-    break;
-case 'E': printf("50 ~ 59\n");
-    break;
-case 'F': printf("50 under\n");
-    break;
-default: printf("Exception\n");
-    break;
-}
-
-for (int i = 5; i < 10; i++)
-{
-    printf("Go!\n");
-}
-
-int count = 10;
-
-while (count > 0)
-{
-    printf("count : %d\n", count);
-
-    count--;
-}
-
-int ammo = 0;
-
-do
-{
-    printf("Reload Ammo\n");
-} 
-while (ammo > 0);
-
-for (int i = 1; i <= 10; i++)
-{
-    if (i % 5 == 0)
-    {
-        continue;
-    }
-
-    printf("%d", i);
-}
-
-for (int i = 0; i < 10; i++)
-{
-    printf("Go!\n");
-
-    for (int j = 0; j < 10; j++)
-    {
-        printf("stop!\n");
-    }
-}
+// int integer = 10;
+// 
+// float decimal = 5.5f;
+// 
+// float storage = integer + decimal;
+// 
+// printf("storage 변수의 값 : %f\n", storage);
 
 #pragma endregion
+
+#pragma region 명시적 형 변환
+
+// int xo1 = 10;
+// int xo2 = 3;
+// 
+// float storage = (float) xo1 / xo2;
+// 
+// printf("storage 변수의 값 : %f\n", storage);
+#pragma endregion
+
+#pragma region 단축 평가 계산
+
+// int x = 0;
+// int y = 0;
+// 
+// if (x != 0 && y++)
+// {
+//     printf("short circuit\n");
+// }
+// 
+// if (x == 0 || y++)
+// {
+//     printf("first or operator\n");
+// }
+// 
+// if (x != 0 || y++)
+// {
+//     printf("second or operator\n");
+// }
+// 
+// printf("y의 값 : %d\n", y);
+#pragma endregion
+
+#pragma region 메크로
+
+// printf("메크로 SIZE의 값 : %d\n", SIZE);
+// 
+// // ex) SIZE = 100;
+
+#pragma endregion
+
+#pragma region 전처리기
+
+// printf("code 변수의 값 : %d\n", code);
+
+#pragma endregion
+
+#pragma region 연습 3
+
+
+
+#pragma endregion
+
+
+
+
+
+
 
 
 
