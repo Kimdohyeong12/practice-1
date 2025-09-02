@@ -535,9 +535,132 @@ int main()
 
 #pragma region 연습 3
 
-
+// int social = 15;
+// 
+// float follower = 3.5f;
+// 
+// float sns = social + follower;
+// 
+// printf("sns 이용자 수 : %f\n", sns);
+// 
+// int r1 = 7;
+// int r2 = 7;
+// 
+// float r3 = (float)r1 * r2;
+// 
+// printf("r3 변수의 값 : %f\n", r3);
+// 
+// 
+// int x = 15;
+// int y = 22;
+// 
+// if (x == 0 && y++)
+// {
+//     printf("first adaptor \n");
+// }
+// 
+// if (x != 0 || y++)
+// {
+//     printf("second adaptor\n");
+// }
+// 
+// if (x == 0 || y++)
+// {
+//     printf("third adaptor\n");
+// }
+// 
+// printf("y의 값 : %d\n", y);
+// 
+// printf("매크로 SIZE의 값 : %d\n", SIZE);
+// 
+// printf("code 변수의 값 : %d\n", code);
 
 #pragma endregion
+
+#pragma region 주소 연산자
+
+// int data = 10;
+// 
+// printf("data 주소의 변수 값 : %p\n", &data);
+
+#pragma endregion
+
+#pragma region scanf_s 함수
+
+// int x = 0;
+// 
+// printf("x 변수의 값을 입력 : ");
+// 
+// scanf_s("%d", &x);
+// 
+// printf("x 변수의 값 : %d\n", &x);
+
+#pragma endregion
+
+#pragma region 포인터
+
+int storage = 10;
+
+int variable = 20;
+
+int* pointer = &storage;
+
+printf("storage 변수의 주소 : %p\n", &storage);
+printf("pointer 변수의 값 : %p\n", pointer);
+printf("pointer 변수의 주소 : %p\n\n", &pointer);
+
+*pointer = 99;
+
+printf("storage 변수의 값 : %d\n", storage);
+printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+
+pointer = &variable;
+
+*pointer = 100;
+
+printf("variable 변수의 값 %d\n", variable);
+printf("pointer 변수의 값 : %d\n", variable);
+printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
+
+printf("int 자료형의 크기 : %u\n", sizeof(int));
+printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
+
+#pragma endregion
+
+#pragma region 범용 포인터
+
+// char xo1 = 'A';
+// int xo2 = 10;
+// float xo3 = 45.5f;
+// 
+// void* reference = NULL;
+// 
+// reference = &xo1;
+// 
+// *(char*)reference = 'B';
+// 
+// printf("xo1 변수의 값 : %C\n", xo1);
+// printf("reference 변수의 값 : %p\n\n", reference);
+// 
+// reference = &xo2;
+// 
+// *(int*)reference = 50;
+// 
+// printf("xo2 변수의 값 : %d\n", xo2);
+// printf("reference 변수의 값 : %p\n\n", reference);
+// 
+// reference = &xo3;
+// 
+// *(float*)reference = 45.5f;
+// 
+// printf("xo3 변수의 값 : %f\n", xo3);
+// printf("reference 변수의 값 : %p\n\n", reference);
+
+#pragma endregion
+
+
+
+
 
 
 
