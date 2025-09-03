@@ -599,31 +599,31 @@ int main()
 
 #pragma region 포인터
 
-int storage = 10;
-
-int variable = 20;
-
-int* pointer = &storage;
-
-printf("storage 변수의 주소 : %p\n", &storage);
-printf("pointer 변수의 값 : %p\n", pointer);
-printf("pointer 변수의 주소 : %p\n\n", &pointer);
-
-*pointer = 99;
-
-printf("storage 변수의 값 : %d\n", storage);
-printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
-
-pointer = &variable;
-
-*pointer = 100;
-
-printf("variable 변수의 값 %d\n", variable);
-printf("pointer 변수의 값 : %d\n", variable);
-printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
-
-printf("int 자료형의 크기 : %u\n", sizeof(int));
-printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
+// int storage = 10;
+// 
+// int variable = 20;
+// 
+// int* pointer = &storage;
+// 
+// printf("storage 변수의 주소 : %p\n", &storage);
+// printf("pointer 변수의 값 : %p\n", pointer);
+// printf("pointer 변수의 주소 : %p\n\n", &pointer);
+// 
+// *pointer = 99;
+// 
+// printf("storage 변수의 값 : %d\n", storage);
+// printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+// 
+// pointer = &variable;
+// 
+// *pointer = 100;
+// 
+// printf("variable 변수의 값 %d\n", variable);
+// printf("pointer 변수의 값 : %d\n", variable);
+// printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
+// 
+// printf("int 자료형의 크기 : %u\n", sizeof(int));
+// printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
 
 #pragma endregion
 
@@ -657,6 +657,106 @@ printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
 // printf("reference 변수의 값 : %p\n\n", reference);
 
 #pragma endregion
+
+#pragma region 상수 지시 포인터
+
+// int xo1 = 10;
+// int xo2 = 20;
+// 
+// const int* const_pointer = &xo1;
+// 
+// // *const_pointer = 99;
+// 
+// printf("xo1의 주소값 : %p\n", &xo1);
+// printf("const_pointer의 주소값 : %p\n", const_pointer);
+// 
+// const_pointer = &xo2;
+// 
+// printf("xo2의 주소값 : %p\n", &xo2);
+// printf("const_pointer의 주소값 : %p\n", const_pointer);
+
+
+
+#pragma endregion
+
+#pragma region 포인터 상수
+
+// int xo3 = 99;
+// int xo4 = 555;
+// 
+// int* const ko_pointer = &xo3;
+// 
+// *ko_pointer = 125;
+// 
+// printf("ko_pointer 변수가 가리키는 값 : %d\n", *ko_pointer);
+// printf("xo3의 값 : %d\n", xo3);
+// 
+// *ko_pointer = &xo4;
+// 
+// printf("xo3 주소 값 : %p\n", &xo3);
+// printf("ko_pointer 주소 값 : %p\n\n", ko_pointer);
+// printf("xo4의 값 : %d\n", xo4);
+// printf("xo4의 주소 값 : %p\n", &xo4);
+
+#pragma endregion
+
+#pragma region 연습 4
+
+int data = 100;
+
+printf("data 주소값 : %p\n", &data);
+
+int a = 0;
+
+printf("a 값 입력 : "); 
+
+scanf_s("%d", &a);
+
+printf("a 값 : %d\n", a);
+
+int police = 10;
+
+int enemy = 20;
+
+int* pointer = &police;
+
+printf("police 변수 주소 : %p\n", &police);
+printf("pointer 변수 값 : %p\n", pointer);
+printf("pointer 변수 주소 : % p\n\n", &pointer);
+
+*pointer = 99;
+
+printf("police 변수 값 : %d\n", police);
+printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+
+pointer = &enemy;
+
+*pointer = 100;
+
+printf("enemy 변수 값 : %d\n", enemy);
+printf("pointer 변수 값 : %d\n", enemy);
+printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
+
+printf("int 자료형의 크기 : %u\n", sizeof(int));
+printf("pointer 변수의 크기 : u\n", sizeof(pointer));
+
+char xo1 = 'S';
+int xo2 = 70;
+float xo3 = 36.5f;
+
+void* reference = NULL;
+
+reference = &xo1;
+
+*(char*)reference = 'A';
+
+printf("xo1 변수의 값 : %C\n", xo1);
+printf("reference 변수의 값 : %p\n\n", reference);
+
+#pragma endregion
+
+
+
 
 
 
