@@ -738,7 +738,7 @@ printf("pointer 변수 값 : %d\n", enemy);
 printf("pointer 변수가 가리키는 값 : %d\n\n", *pointer);
 
 printf("int 자료형의 크기 : %u\n", sizeof(int));
-printf("pointer 변수의 크기 : u\n", sizeof(pointer));
+printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
 
 char xo1 = 'S';
 int xo2 = 70;
@@ -752,6 +752,52 @@ reference = &xo1;
 
 printf("xo1 변수의 값 : %C\n", xo1);
 printf("reference 변수의 값 : %p\n\n", reference);
+
+reference = &xo2;
+
+*(int*)reference = 50;
+
+printf("xo2 변수의 값 : %d\n", xo2);
+printf("reference 변수의 값 : %p\n\n", reference);
+
+reference = &xo3;
+
+*(float*)reference = 45.5f;
+
+printf("xo3 변수의 값 : %f\n", xo3);
+printf("reference 변수의 값 : %p\n\n", reference);
+
+int zo1 = 10;
+int zo2 = 20;
+
+const int* const_pointer = &zo1;
+
+// *const_pointer = 99;
+
+printf("zo1의 주소 값 : %p\n", &zo1);
+printf("const_pointer 주소 값 : %p\n", const_pointer);
+
+const_pointer = &zo2;
+
+printf("zo2의 주소 값 : %p\n", &zo2);
+printf("const_pointer의 주소 값 : %p\n", const_pointer);
+
+int zo3 = 55;
+int zo4 = 999;
+
+int* const ko_pointer = &zo3;
+
+*ko_pointer = 125;
+
+printf("ko_pointer 변수가 가리키는 값 : %d\n", *ko_pointer);
+printf("zo3의 값 : %d\n", zo3);
+
+*ko_pointer = &zo4;
+
+printf("zo3의 주소 값 : %p\n", &zo3);
+printf("ko_pointer의 주소 값 : %p\n\n", ko_pointer);
+printf("zo4의 값 : %d\n", zo4);
+printf("zo4의 주소 값 : %p\n", &zo4);
 
 #pragma endregion
 
